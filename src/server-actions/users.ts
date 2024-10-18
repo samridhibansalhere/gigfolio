@@ -266,6 +266,8 @@ export const searchAdmins = async (searchValue: string): Promise<UserType[]> => 
     _id: admin._id.toString(), 
     name: admin.name,
     email: admin.email,
+    bio: admin.bio || "",
+    portfolio: admin.portfolio || "",
     profilePic: admin.profilePic,
     isAdmin: admin.isAdmin,
     isApproved: admin.isApproved,
