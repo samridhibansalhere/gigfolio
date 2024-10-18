@@ -23,6 +23,9 @@ export const searchUsers = async (searchValue: string): Promise<UserType[]> => {
     _id: user._id.toString(), // Treat _id as a string
     name: user.name,
     email: user.email,
+    bio: user.bio || "",
+    portfolio: user.portfolio || "",
+    skills: user.skills || [],
     profilePic: user.profilePic,
     isAdmin: user.isAdmin,
     isApproved: user.isApproved,
