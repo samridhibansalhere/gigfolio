@@ -18,6 +18,8 @@ export default async function UsersPage() {
     email: user.email,
     profilePic: user.profilePic,
     isAdmin: user.isAdmin,
+    portfolio: user.portfolio||"",
+    bio: user.bio || "",
     isApproved: user.isApproved,
     createdAt: user.createdAt.toISOString(),
     updatedAt: user.updatedAt.toISOString(),
