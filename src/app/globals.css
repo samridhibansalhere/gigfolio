@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  box-sizing: border-box !important;
+  margin: 0;
+  padding: 0;
+}
+button {
+  padding: 10px 15px; /* Add padding for better spacing */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Show ellipsis for overflowing text */
+}
+.search-input {
+  width: 900px; /* Default width for small screens */
+}
+@media (min-width: 768px) {
+  .search-input {
+    width: 1200px; /* Width for desktop view */
+  }
+}
+
+* {
+  box-sizing: border-box !important;
+  font-family: "Montserrat", sans-serif !important;
+  margin: 0;
+  padding: 0;
+}
+
+.cl-card {
+  box-shadow: none !important;
+}
+
+.cl-internal-1dauvpw {
+  display: none !important;
+}
+
+.cl-formButtonPrimary {
+  background-color: #35374b !important;
+  height: 42px !important;
+}
+
+.ant-drawer-header {
+  background-color: black !important;
+}
+.ant-drawer-body {
+  background-color: black !important;
+}
+.ant-drawer-close{
+  color:white !important;
+}
+.spinner{
+  height: 50px !important;
+  width: 50px !important;
+}
+
+table{
+  margin-top: 20px !important;
+  border: 1px solid #cbcbcb !important;
+}
+
+
+/* scrollbar styling */
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  margin-right: 5px !important ;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #d6d5d5;
+  margin-right: 5px !important ;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #adadad;
+}
