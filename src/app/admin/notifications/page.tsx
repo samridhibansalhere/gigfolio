@@ -91,7 +91,7 @@ function AdminNotificationsPage() {
     const response = await markAsRead(notificationId);
     if (response.success && response.data) {
       const updatedNotification: NotificationType = {
-        _id: response.data._id?.toString() || "",
+        _id: response.data._id?.toString() || "", 
         user: transformUser(response.data.user),
         sender: transformUser(response.data.sender),
         type: response.data.type || "",
