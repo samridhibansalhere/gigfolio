@@ -33,9 +33,9 @@ export const getChats = async (conversationId: string, userId: string) => {
 
     const chats = await ChatModel.find({ conversationId }).populate("sender receiver");
     
-    const unreadChats = chats.filter(chat => chat.receiver._id.toString() === userId && !chat.read);
+    const unreadChats = chats.filter(chat => chat.receiver._id.toString() === userId && !chat.isRead);
     
-    const readChats = chats.filter(chat => chat.receiver._id.toString() === userId && chat.read);
+    const readChats = chats.filter(chat => chat.receiver._id.toString() === userId && chat.isRead);
 
     const sentChats = chats.filter(chat => chat.sender._id.toString() === userId);
 
