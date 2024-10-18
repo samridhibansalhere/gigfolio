@@ -3,7 +3,6 @@ import AllotedTaskModel from "@/models/allotedtask-model";
 import { connectToMongoDB } from "@/config/mongodb-connection";
 import { AllotedTaskType, TaskType, UserType } from "@/interfaces";
 import NotificationModel from "@/models/notification-model";
-import SubmittedTaskModel from "@/models/submittedtask-model";
 import { uploadImageToFirebase } from "@/helpers/uploads";
 import TaskModel from "@/models/task-model";
 connectToMongoDB();
